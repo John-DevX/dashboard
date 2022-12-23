@@ -10,7 +10,7 @@ import Analytics from '../components/Analytics';
 import Developer from '../components/Developer';
 export default function Home() :JSX.Element {
   const [theme,setTheme] = useState(false);
-    const changeTheme = () :void => {
+    const changeTheme = () => {
         setTheme(!theme);
     }
   return (
