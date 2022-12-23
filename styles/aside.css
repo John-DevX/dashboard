@@ -1,0 +1,24 @@
+.aside{
+    background-color: var(--colorTwo);
+    color: var(--colorFive);
+}
+
+.hidde-sidebar{
+    position: fixed;
+    left: -15rem;
+    transition: 0.5s;
+}
+
+.show-sidebar{
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+}
+
+.mobile-a{
+    left: -1.5rem;
+}
+
+.desktop-a{
+    left: 5rem !important;
+}

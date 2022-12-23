@@ -1,0 +1,20 @@
+.show-profile{
+    right: -15rem;
+    transition: 1s;
+    position: fixed;
+}
+
+.hidden-profile{
+    right: 0;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.mobile-p{
+    right: -1.5rem;
+}
+
+.profile-color{
+    background-color: var(--colorOne);
+    color: var(--colorFor);
+}

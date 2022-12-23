@@ -1,0 +1,3 @@
+.border-color:focus{
+    border: var(--colorThree) 1px solid;
+}
