@@ -1,6 +1,6 @@
 import React from 'react'
 import { CgProfile } from 'react-icons/cg';
-import profile from '../public/assets/images/profile.jpg';
+import profile from '../public/assets/images/profile.png';
 import Image from 'next/image';
 import { useState } from 'react';
 export default function Profile() :JSX.Element{
@@ -20,7 +20,7 @@ export default function Profile() :JSX.Element{
                 width='100'
                 height='100'
                 />
-                <h4 className='font-bold ml-2 mt-2 border-b-2 border-b-blue-400 rounded'>John</h4>
+                <h4 className='font-bold ml-2 mt-2 border-b-2 border-b-blue-400 rounded'>User</h4>
             </section>
         </div>
     </div>
