@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { MdNightlightRound } from 'react-icons/md';
+import { FaSun } from 'react-icons/fa';
 import Head from 'next/head';
 import Sidebar from '../components/Sidebar';
 import Search from '../components/Search';
@@ -5,7 +8,11 @@ import Profile from '../components/Profile';
 import Cards from '../components/Cards';
 import Analytics from '../components/Analytics';
 import Developer from '../components/Developer';
-export default function Home() {
+export default function Home() :JSX.Element {
+  const [theme,setTheme] = useState(false);
+    const changeTheme = () :void => {
+        setTheme(!theme);
+    }
   return (
     <>
       <Head>
@@ -14,31 +21,37 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="./assets/images/favicon.ico" />
       </Head>
-
-      <div className=
-      'w-96 h mx-auto shadow-xl p-4 md:w-11/12 rounded-xl'
-      >
-          <header className='flex '>
-            <Sidebar/>
-            <Search/>
-            <Profile/>
-          </header>
-          <main className='mt-5'>
-            <div className='flex justify-center'>
-              <Cards/>
-            </div>
-            <div className='ml-20 mt-5'>
-            <h4 className='font-bold'>Analytics</h4>
-            </div>
-            <div>
-              <Analytics/>
-            </div>
-          </main>
-          <footer className='flex justify-center mt-5'>
-            <Developer/>
-          </footer>
+      <div className={theme ? 'body-theme' : 'body'}>
+        <div className=
+        'w-96 h mx-auto shadow-xl p-4 md:w-11/12 rounded-xl'
+        >
+            <header className='flex'>
+              <Sidebar/>
+              <Search/>
+              <div className='absolute right-14 md:right-24 top-5'>
+                <button onClick={changeTheme}>{theme? <FaSun/> : <MdNightlightRound/>}</button>
+              </div>
+              <Profile/>
+            </header>
+            <main className='mt-5'>
+              <div className='flex justify-center'>
+                <Cards/>
+              </div>
+              <div className='ml-20 mt-5'>
+              <h4 className='font-bold'>Analytics</h4>
+              </div>
+              <div>
+                <Analytics/>
+              </div>
+            </main>
+            <footer className='flex justify-center mt-5'>
+              <Developer/>
+            </footer>
+        </div>
       </div>
 
     </>
   )
 }
+
+

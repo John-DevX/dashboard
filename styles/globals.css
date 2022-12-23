@@ -18,7 +18,14 @@
     --font: 'Poppins', sans-serif;  
 }
 
-body{
+.body{
     font-family: var(--font);
+    background-color: var(--colorFive);
     color: var(--colorOne);
+}
+
+.body-theme{
+    font-family: var(--font);
+    background-color: var(--colorOne);
+    color: var(--colorFive);
 }
