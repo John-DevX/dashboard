@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaGithubAlt } from 'react-icons/fa';
 
-export default function Developer() {
+export default function Developer() :JSX.Element{
   return (
     <div className='shadow-xl w-60 h-20 pt-1 border-b-2 border-b-blue-300'>
         <h4 className='font-bold text-center'>Developer John-DevX</h4>
