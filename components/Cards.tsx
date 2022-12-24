@@ -13,21 +13,26 @@ import twiiter from '../public/assets/images/twiiter.png';
             title='Linkedin workflow'
             image={linkedin}
             alt='Linkedin logo'
+            free='Free'
             />
             <CardsF 
             title='Email workflow'
             image={email}
             alt='Email logo'
+            free='R$15'
             />
             <CardsF 
             title='Instagram workflow'
             image={instagram}
             alt='Instagram logo'
+            free='Free'
             />
             <CardsF 
-            title='twiiter Workflow'
+            title='Twiiter Workflow'
             image={twiiter}
-            alt='Twiiter logo'/>
+            alt='Twiiter logo'
+            free='Free'
+            />
         </div>        
     </div>
   )
@@ -35,10 +40,10 @@ import twiiter from '../public/assets/images/twiiter.png';
 
 export default Cards;
 
-export const CardsF = ({title, image, alt}:any)=>{
+export const CardsF = ({title, image, alt, free}:any)=>{
     return(
         <div>
-        <section className='shadow w-44 h-52 p-5 text-center ml-5 transition'>
+        <section className='shadow-xl w-60 h-60 p-5 text-center ml-5 duration-1000 hover:w-72 border-b-4 border-cyan-500'>
             <div className='flex justify-center'>
                 <Image
                 className='rounded-full w-10 h-10'
@@ -50,6 +55,10 @@ export const CardsF = ({title, image, alt}:any)=>{
             </div>
             <h4 className='text-ms mt-2'>{title}</h4>
             <small className='text-xs mt-2 text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+            <section className='flex justify-between mt-10'>
+                <small>{free}</small>
+                <button className='border bg-blue-300 text-white w-24 hover:bg-blue-400 duration-500 rounded'>Start</button>
+            </section>
         </section>
         </div>
     )

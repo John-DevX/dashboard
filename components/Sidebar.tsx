@@ -51,32 +51,32 @@ export const List = () :JSX.Element => {
   return(
     <ul className='text-slate-200 mt-5'>
       <li className='ml-5 mb-3 flex cursor-pointer p-1 hover:bg-blue-400 hover:border-l-2 duration-300'>
-        <SiKickstarter className='mr-2 text-sm text-white'/>
+        <SiKickstarter className='mr-2 text-lg text-white'/>
         <a href="#" className='text-xs'>Start</a>
       </li>
       <li className='ml-5 mb-3 flex cursor-pointer p-1 hover:bg-blue-400 hover:border-l-2 duration-300'>
-        <SiGoogleanalytics className='mr-2 text-sm text-white'/>
+        <SiGoogleanalytics className='mr-2 text-lg text-white'/>
         <a href="#" className='text-xs'>Analytics</a>
       </li>
       <li className='ml-5 mb-3 flex cursor-pointer p-1 hover:bg-blue-400 hover:border-l-2 duration-300'>
-        <BsPersonLinesFill className='mr-2 text-sm text-white'/>
+        <BsPersonLinesFill className='mr-2 text-lg text-white'/>
         <a href="#" className='text-xs'>Contributors</a>
       </li>
       <li className='ml-5 mb-3 flex cursor-pointer p-1 hover:bg-blue-400 hover:border-l-2 duration-300'>
-        <BsFileEarmarkPersonFill className='mr-2 text-sm text-white'/>
+        <BsFileEarmarkPersonFill className='mr-2 text-lg text-white'/>
         <a href="#" className='text-xs'>Depositions</a>
       </li>
       <li className='ml-5 mb-3 flex cursor-pointer p-1 hover:bg-blue-400 hover:border-l-2 duration-300'>
-        <MdMessage className='mr-2 text-sm text-white'/>
+        <MdMessage className='mr-2 text-lg text-white'/>
         <a href="#" className='text-xs'>Message</a>
         <IoIosNotifications className='bg-blue-600 rounded-full ml-5'/>
       </li>
       <li className='ml-5 mb-3 flex cursor-pointer p-1 hover:bg-blue-400 hover:border-l-2 duration-300'>
-        <IoMdSettings className='mr-2 text-sm text-white'/>
+        <IoMdSettings className='mr-2 text-lg text-white'/>
         <a href="#" className='text-xs'>Settings</a>
       </li>
       <li className='ml-5 mb-3 mt-10 flex cursor-pointer p-1 hover:bg-blue-400 hover:border-l-2 duration-300'>
-        <FiLogOut className='mr-2 text-sm text-white'/>
+        <FiLogOut className='mr-2 text-lg text-white'/>
         <a href="#" className='text-xs'>Logout</a>
       </li>
     </ul>

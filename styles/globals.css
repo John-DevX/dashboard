@@ -17,6 +17,9 @@
     --colorFive: #fcfcfc;
     --font: 'Poppins', sans-serif;  
 }
+body input{
+    color: #1F2C43;
+}
 
 .body{
     font-family: var(--font);
@@ -28,4 +31,8 @@
     font-family: var(--font);
     background-color: var(--colorOne);
     color: var(--colorFive);
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
