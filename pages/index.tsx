@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Sidebar from '../components/Sidebar';
 import Search from '../components/Search';
 import Profile from '../components/Profile';
+import Date from '../components/Date';
 import Cards from '../components/Cards';
 import Analytics from '../components/Analytics';
 import Developer from '../components/Developer';
@@ -25,13 +26,16 @@ export default function Home() :JSX.Element {
         <div className=
         'w-96 h mx-auto shadow-xl p-4 md:w-11/12 rounded-xl'
         >
-            <header className='flex'>
-              <Sidebar/>
-              <Search/>
-              <div className='absolute right-14 md:right-24 top-5'>
-                <button onClick={changeTheme}>{theme? <FaSun/> : <MdNightlightRound/>}</button>
+            <header>
+              <div className='flex'>
+                <Sidebar/>
+                <Search/>
+                <div className='absolute right-14 md:right-24 top-5'>
+                  <button onClick={changeTheme}>{theme? <FaSun/> : <MdNightlightRound/>}</button>
+                </div>
+                <Profile/>
               </div>
-              <Profile/>
+              <Date/>
             </header>
             <main className='mt-5'>
               <div className='flex justify-center'>

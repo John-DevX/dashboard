@@ -1,6 +1,5 @@
 .aside{
-    background-color: var(--colorTwo);
-    color: var(--colorFive);
+    background-color: var(--colorTwo)
 }
 
 .hidde-sidebar{
@@ -15,10 +14,3 @@
     transition: 0.3s;
 }
 
-.mobile-a{
-    left: -1.5rem;
-}
-
-.desktop-a{
-    left: 5rem !important;
-}

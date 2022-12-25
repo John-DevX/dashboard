@@ -57,7 +57,7 @@ export const CardsF = ({title, image, alt, free}:any)=>{
             <small className='text-xs mt-2 text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
             <section className='flex justify-between mt-10'>
                 <small>{free}</small>
-                <button className='border bg-blue-300 text-white w-24 hover:bg-blue-400 duration-500 rounded'>Start</button>
+                <button className='bg-blue-500 text-white w-24 hover:bg-blue-400 duration-500 rounded'>Start</button>
             </section>
         </section>
         </div>

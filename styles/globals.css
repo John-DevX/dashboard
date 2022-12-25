@@ -17,7 +17,7 @@
     --colorFive: #fcfcfc;
     --font: 'Poppins', sans-serif;  
 }
-body input{
+body input, .search{
     color: #1F2C43;
 }
 
