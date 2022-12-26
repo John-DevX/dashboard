@@ -43,7 +43,7 @@ export default Cards;
 export const CardsF = ({title, image, alt, free}:any)=>{
     return(
         <div>
-        <section className='shadow-xl w-60 h-60 p-5 text-center ml-5 duration-1000 hover:w-72 border-b-4 border-cyan-500'>
+        <section className='theme shadow-xl w-60 h-60 p-5 text-center ml-5 duration-1000 hover:w-72 border-b-4 border-cyan-500'>
             <div className='flex justify-center'>
                 <Image
                 className='rounded-full w-10 h-10'

@@ -2,6 +2,7 @@
     animation: github linear infinite 4s;
     position: relative;
 }
+
 @keyframes github{
     0%, 100%{
         transform: translateY(0);

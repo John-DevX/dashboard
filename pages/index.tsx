@@ -42,7 +42,7 @@ export default function Home() :JSX.Element {
                 <Cards/>
               </div>
               <div className='ml-20 mt-5'>
-              <h4 className='font-bold'>Analytics</h4>
+              <h1 className='font-bold text-xl'>Analytics</h1>
               </div>
               <div>
                 <Analytics/>

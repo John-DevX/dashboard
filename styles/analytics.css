@@ -22,3 +22,24 @@
     left: 37rem
 }
 
+.border-teste{
+    transition: 1s ease-in-out;
+    position: relative;
+    
+}
+
+.border-teste::after{
+    content: '';
+    width: 0%;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background-color: var(--colorThree);
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+.border-teste:hover::after{
+    width: 100%;
+}

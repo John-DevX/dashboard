@@ -21,6 +21,14 @@ body input, .search{
     color: #1F2C43;
 }
 
+.body .theme{
+    color: black;
+    background-color: #fcfcfc;
+}
+
+.body-theme .theme{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
 
 .body{
     font-family: var(--font);
@@ -36,4 +44,8 @@ body input, .search{
 
 ::-webkit-scrollbar{
     display: none;
+}
+
+.theme{
+    background-color: var(--colorOne);
 }
