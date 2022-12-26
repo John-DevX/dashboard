@@ -10,7 +10,7 @@ export default function Profile() :JSX.Element{
     }
   return (
     <div>
-        <CgProfile onClick={showProfile} className='text-2xl absolute right-4 cursor-pointer md:right-14'/>
+        <CgProfile onClick={showProfile} className='text-2xl absolute right-4 cursor-pointer md:right-8'/>
         <div className={profilee ? 'hidden-profile': 'show-profile'}>
             <section className='absolute right-0 top-10 profile-color h-60 w-32 text-center  p-2 rounded bg-sky-900'>
                 <Image

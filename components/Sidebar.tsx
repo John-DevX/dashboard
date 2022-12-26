@@ -4,7 +4,7 @@ import Image from 'next/image';
 import logo from '../public/assets/images/logo.png'
 import { SiKickstarter, SiGoogleanalytics} from 'react-icons/si';
 import { BsPersonLinesFill, BsFileEarmarkPersonFill } from 'react-icons/bs';
-import { IoMdSettings,IoIosNotifications } from 'react-icons/io';
+import { IoMdSettings } from 'react-icons/io';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { MdMessage } from 'react-icons/md';
 import { FiLogOut } from 'react-icons/fi';
@@ -25,7 +25,7 @@ export const Aside = () :JSX.Element => {
   }
   return(
     <>
-    <HiOutlineMenuAlt3 className='cursor-pointer text-2xl z-20' onClick={showAside}/>
+    <HiOutlineMenuAlt3 className='cursor-pointer text-2xl z-20 ml-4' onClick={showAside}/>
       <div className={sidebar? 'show-sidebar z-10' : 'hidde-sidebar'}>
         <aside className='aside shadow-xl w-44 h-5/6 p-3 rounded mt-10'>
             <section className='flex'>
@@ -69,7 +69,7 @@ export const List = () :JSX.Element => {
       <li className='ml-5 mb-3 flex cursor-pointer p-1 hover:bg-blue-400 hover:border-l-2 duration-300 hover:ml-8'>
         <MdMessage className='mr-2 text-lg text-white'/>
         <a href="#" className='text-xs'>Message</a>
-        <IoIosNotifications className='bg-blue-600 rounded-full ml-5'/>
+        <div className='bg-blue-600 flex ml-5 justify-center w-4 h-4 rounded-full'><h4 className='text-xs'>5</h4></div>
       </li>
       <li className='ml-5 mb-3 flex cursor-pointer p-1 hover:bg-blue-400 hover:border-l-2 duration-300 hover:ml-8'>
         <IoMdSettings className='mr-2 text-lg text-white'/>

@@ -26,19 +26,19 @@ export default function Home() :JSX.Element {
         <div className=
         'w-96 h mx-auto shadow-xl p-4 md:w-11/12 rounded-xl'
         >
-            <header>
+            <header className={!theme ? 'shadow-xl pb-4 pt-4 fixed left-0 top-0  w-full body z-10 border-b-2 border-b-blue-300' : 'shadow-xl pb-4 pt-4 fixed left-0 top-0  w-full body-theme z-10 border-b-2 border-b-blue-300'}  >
               <div className='flex'>
                 <Sidebar/>
                 <Search/>
-                <div className='absolute right-14 md:right-24 top-5'>
+                <div className='absolute right-14 md:right-20 top-5 '>
                   <button onClick={changeTheme}>{theme? <FaSun/> : <MdNightlightRound/>}</button>
                 </div>
                 <Profile/>
               </div>
-              <Date/>
             </header>
             <main className='mt-5'>
-              <div className='flex justify-center'>
+            <Date/>
+              <div className='flex justify-center mt-4'>
                 <Cards/>
               </div>
               <div className='ml-20 mt-5'>
