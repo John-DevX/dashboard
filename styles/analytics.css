@@ -22,24 +22,30 @@
     left: 37rem
 }
 
-.border-teste{
-    transition: 1s ease-in-out;
-    position: relative;
-    
+.border-efect, .border-efect2{
+    transition: 0.5s ease-in-out;
+    position: relative;   
 }
 
-.border-teste::after{
+.border-efect::after, .border-efect2::after{
     content: '';
     width: 0%;
     left: 50%;
     bottom: -1px;
     height: 3px;
-    background-color: var(--colorThree);
     position: absolute;
     transition: 0.5s ease-in-out;
     transform: translate(-50%, -50%);
 }
 
-.border-teste:hover::after{
+.border-efect:hover::after, .border-efect2:hover::after{
     width: 100%;
+}
+
+.border-efect::after{
+    background-color: rgba(96,165,250);
+}
+
+.border-efect2::after{
+    background-color: red;
 }
