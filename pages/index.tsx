@@ -25,7 +25,7 @@ export default function Home() :JSX.Element {
       </Head>
       <div className={theme ? 'body-theme' : 'body'}>
         <div className=
-        'w-96 h mx-auto shadow-xl p-4 md:w-11/12 rounded-xl'
+        'h mx-auto shadow-xl p-4 md:w-11/12 rounded-xl w-full'
         >
             <header className={!theme ? 'shadow-xl pb-4 pt-4 fixed left-0 top-0  w-full body z-10 border-b-2 border-b-blue-300' : 'shadow-xl pb-4 pt-4 fixed left-0 top-0  w-full body-theme z-10 border-b-2 border-b-blue-300'}  >
               <div className='flex'>

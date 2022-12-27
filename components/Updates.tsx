@@ -5,7 +5,7 @@ import profile1 from '../public/assets/images/profile1.png'
 import profile2 from '../public/assets/images/profile2.jpg' 
 export default function Updates() {
   return (
-    <div className='theme mt-10 flex justify-center mx-auto shadow-xl h-52 w-96' >
+    <div className='theme mt-10 flex justify-center mx-auto shadow-xl h-52 w-full md:w-96' >
         <section className='text-center'> 
             <h1 className='text-xl font-bold mb-2'>Recentes Updates</h1>
             <ul>
