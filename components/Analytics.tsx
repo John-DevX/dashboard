@@ -6,7 +6,7 @@ import { BsPersonCircle } from "react-icons/bs";
 export default function Analytics() {
   return (
     <div>
-        <div className='theme shadow-xl md:w-3/4 h-60 mx-auto relative hover:border-b-4 hover:border-b-blue-200 duration-500 rounded'>
+        <div className='theme shadow-xl md:w-3/4 h-60 mx-auto relative hover:border-b-4 hover:border-b-blue-200 duration-500 rounded-xl'>
           <h4 className='font-bold text-sm text-center pt-5'>Workflow history</h4>
           <section className='flex'>
             <ul className='text-xs'>
@@ -59,6 +59,7 @@ export default function Analytics() {
             percentage='+50%'
             value='5050'
             color='rgb(43, 239, 239)'
+            colorIcon='blue'
             />
             <Sales
             icon={<RiHandbagFill />}
@@ -66,6 +67,7 @@ export default function Analytics() {
             percentage='-17%'
             value='1100'
             color='red'
+            colorIcon='red'
             />
             <Sales
             icon={<BsPersonCircle />}
@@ -73,6 +75,7 @@ export default function Analytics() {
             percentage='+20%'
             value='2240'
             color='rgb(43, 239, 239)'
+            colorIcon='rgb(54, 217, 217)'
             />
           </div>
         </section>
@@ -80,11 +83,11 @@ export default function Analytics() {
   )
 }
 
-export function Sales({icon,title, percentage, value, color} :any){
+export function Sales({icon,title, percentage, value, color, colorIcon} :any){
   return(
-          <div className='theme shadow-xl w-60 h-14 mt-5 mr-5 border-teste'>
+          <div className='theme shadow-xl w-60 h-14 mt-5 mr-5 border-teste rounded-md'>
             <section className='flex mt-1'>
-              <div>
+              <div style={{color: `${colorIcon}`}}>
                 {icon}
               </div>
               <h4 className='font-semibold ml-2'>{title}</h4>

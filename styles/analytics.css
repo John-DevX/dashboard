@@ -32,7 +32,7 @@
     content: '';
     width: 0%;
     left: 50%;
-    bottom: 0;
+    bottom: -1px;
     height: 3px;
     background-color: var(--colorThree);
     position: absolute;

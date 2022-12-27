@@ -9,6 +9,7 @@ import Date from '../components/Date';
 import Cards from '../components/Cards';
 import Analytics from '../components/Analytics';
 import Developer from '../components/Developer';
+import Updates from '../components/Updates';
 export default function Home() :JSX.Element {
   const [theme,setTheme] = useState(false);
     const changeTheme = () => {
@@ -31,7 +32,7 @@ export default function Home() :JSX.Element {
                 <Sidebar/>
                 <Search/>
                 <div className='absolute right-14 md:right-20 top-5 '>
-                  <button onClick={changeTheme}>{theme? <FaSun/> : <MdNightlightRound/>}</button>
+                  <button className='hover:bg-blue-400 hover:text-white duration-500 rounded-full' onClick={changeTheme}>{theme? <FaSun/> : <MdNightlightRound/>}</button>
                 </div>
                 <Profile/>
               </div>
@@ -46,6 +47,7 @@ export default function Home() :JSX.Element {
               </div>
               <div>
                 <Analytics/>
+                <Updates/>
               </div>
             </main>
             <footer className='flex justify-center mt-5'>

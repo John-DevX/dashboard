@@ -5,7 +5,7 @@ import logo from '../public/assets/images/logo.png'
 import { SiKickstarter, SiGoogleanalytics} from 'react-icons/si';
 import { BsPersonLinesFill, BsFileEarmarkPersonFill } from 'react-icons/bs';
 import { IoMdSettings } from 'react-icons/io';
-import { HiOutlineMenuAlt3 } from 'react-icons/hi';
+import { HiOutlineMenuAlt3, HiX} from 'react-icons/hi';
 import { MdMessage } from 'react-icons/md';
 import { FiLogOut } from 'react-icons/fi';
  const Sidebar = () => {
@@ -25,7 +25,9 @@ export const Aside = () :JSX.Element => {
   }
   return(
     <>
-    <HiOutlineMenuAlt3 className='cursor-pointer text-2xl z-20 ml-4' onClick={showAside}/>
+    <button className='cursor-pointer text-2xl z-20 ml-4' onClick={showAside}>
+      {sidebar ? <HiX/> : <HiOutlineMenuAlt3/>}
+    </button>
       <div className={sidebar? 'show-sidebar z-10' : 'hidde-sidebar'}>
         <aside className='aside shadow-xl w-44 h-5/6 p-3 rounded mt-10'>
             <section className='flex'>
