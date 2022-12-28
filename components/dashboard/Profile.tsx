@@ -1,6 +1,6 @@
 import React from 'react'
 import { CgProfile } from 'react-icons/cg';
-import profile from '../public/assets/images/profile.png';
+import profile from '../../public/assets/images/profile.png';
 import Image from 'next/image';
 import { useState } from 'react';
 export default function Profile() :JSX.Element{

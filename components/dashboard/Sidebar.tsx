@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
-import logo from '../public/assets/images/logo.png'
+import logo from '../../public/assets/images/logo.png'
 import { SiKickstarter, SiGoogleanalytics} from 'react-icons/si';
 import { BsPersonLinesFill, BsFileEarmarkPersonFill } from 'react-icons/bs';
 import { IoMdSettings } from 'react-icons/io';
@@ -26,10 +26,10 @@ export const Aside = () :JSX.Element => {
   return(
     <>
     <button className='cursor-pointer text-2xl z-20 ml-4' onClick={showAside}>
-      {sidebar ? <HiX/> : <HiOutlineMenuAlt3/>}
+      {sidebar ? <HiX className='sidebar-body-dark-icon'/> : <HiOutlineMenuAlt3/>}
     </button>
-      <div className={sidebar? 'show-sidebar z-10' : 'hidde-sidebar'}>
-        <aside className='aside shadow-xl w-44 h-5/6 p-3 rounded mt-10'>
+      <div className={sidebar? 'show-sidebar z-10 w-full sidebar-body-dark': 'hidde-sidebar'}>
+        <aside className='aside shadow-xl w-44 p-3 rounded mt-12'>
             <section className='flex'>
               <Image
               className='rounded-full h-16 w-16'

@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image';
-import profile0 from '../public/assets/images/profile0.png' 
-import profile1 from '../public/assets/images/profile1.png' 
-import profile2 from '../public/assets/images/profile2.jpg' 
+import profile0 from '../../public/assets/images/profile0.png' 
+import profile1 from '../../public/assets/images/profile1.png' 
+import profile2 from '../../public/assets/images/profile2.jpg' 
 export default function Updates() {
   return (
     <div className='theme mt-10 flex justify-center mx-auto shadow-xl h-52 w-full md:w-96 border-l-2 border-l-blue-400' >

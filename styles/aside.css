@@ -1,5 +1,6 @@
 .aside{
-    background-color: var(--colorTwo)
+    background-color: var(--colorTwo);
+    height: 25rem; 
 }
 
 .hidde-sidebar{

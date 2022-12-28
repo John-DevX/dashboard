@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import linkedin from '../public/assets/images/linkedin.png';
-import email from '../public/assets/images/email.png';
-import instagram from '../public/assets/images/instagram.png';
-import twiiter from '../public/assets/images/twiiter.png';
+import linkedin from '../../public/assets/images/linkedin.png';
+import email from '../../public/assets/images/email.png';
+import instagram from '../../public/assets/images/instagram.png';
+import twiiter from '../../public/assets/images/twiiter.png';
  function Cards() {
   return (
     <div className='overflow-x-auto'>
