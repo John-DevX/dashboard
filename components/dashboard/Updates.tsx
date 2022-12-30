@@ -3,7 +3,7 @@ import Image from 'next/image';
 import profile0 from '../../public/assets/images/profile0.png' 
 import profile1 from '../../public/assets/images/profile1.png' 
 import profile2 from '../../public/assets/images/profile2.jpg' 
-export default function Updates() {
+export default function Updates() :JSX.Element {
   return (
     <div className='theme mt-10 flex justify-center mx-auto shadow-xl h-52 w-full md:w-96 border-l-2 border-l-blue-400' >
         <section className='text-center'> 
@@ -51,7 +51,6 @@ export default function Updates() {
                     </div>
                     <small className='absolute top-8 left-12 text-slate-500'>2 month ago</small>
                 </li>
-                
             </ul>
         </section>
     </div>

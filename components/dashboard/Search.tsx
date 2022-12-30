@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineSearch } from 'react-icons/ai';
-const Search = () => {
+const Search = () :JSX.Element => {
   return (
     <div className='relative'>
         <AiOutlineSearch className='search absolute left-12 top-2'/>

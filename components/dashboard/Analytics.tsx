@@ -3,7 +3,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { RiHandbagFill } from "react-icons/ri";
 import { BsPersonCircle } from "react-icons/bs";
 
-export default function Analytics() {
+export default function Analytics() :JSX.Element{
   return (
     <div>
         <div className='theme shadow-xl md:w-3/4 h-60 mx-auto relative hover:border-b-4 hover:border-b-blue-400 duration-500 rounded-xl'>

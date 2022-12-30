@@ -55,7 +55,6 @@ export default function Home() :JSX.Element {
             </footer>
         </div>
       </div>
-
     </div>
   )
 }
