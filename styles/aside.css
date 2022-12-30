@@ -1,8 +1,3 @@
-.aside{
-    background-color: var(--colorTwo);
-    height: 25rem; 
-}
-
 .hidde-sidebar{
     position: fixed;
     left: -15rem;
@@ -13,5 +8,16 @@
     position: absolute;
     left: 0;
     transition: 0.3s;
+}
+
+.x{
+    margin-top: -20px;
+}
+
+.sidebar-header{
+    background-color: var(--colorTwo);
+    width: 115%;
+    margin-left: -1em;
+    margin-top: -1rem;
 }
 

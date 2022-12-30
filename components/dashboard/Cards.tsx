@@ -4,7 +4,7 @@ import linkedin from '../../public/assets/images/linkedin.png';
 import email from '../../public/assets/images/email.png';
 import instagram from '../../public/assets/images/instagram.png';
 import twiiter from '../../public/assets/images/twiiter.png';
- function Cards() {
+ function Cards() :JSX.Element{
   return (
     <div className='overflow-x-auto'>
         <h3 className='font-bold mb-10'>Get Started with our Most Popular Workflows</h3>
@@ -40,7 +40,7 @@ import twiiter from '../../public/assets/images/twiiter.png';
 
 export default Cards;
 
-export const CardsF = ({title, image, alt, free}:any)=>{
+export const CardsF = ({title, image, alt, free}:any) => {
     return(
         <div>
         <section className='theme shadow-xl w-60 h-60 p-5 text-center ml-5 duration-1000 hover:w-72 border-b-4 border-blue-400 rounded-md'>
