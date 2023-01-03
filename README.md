@@ -1,14 +1,5 @@
-# Dashboard
-   <ul> 
-     Dashboard UI.
-  </ul> 
-  
-## Technologies Used
- - Next.js
- - TypeScript
- - Tailwind CSS
- 
- ## Deploy
+
+ # Deploy
  > <ul> 
     https://dashboard-umber-nu.vercel.app/
   </ul>
